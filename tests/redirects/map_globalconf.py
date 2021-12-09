@@ -282,7 +282,7 @@ URLS = flatten(
         # Bug 979531, 1003727, 979664, 979654, 979660, 1150713
         url_test("/firefox/customize/", "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars"),
         url_test("/firefox/{performance,happy,speed,memory}/", "/firefox/features/fast/"),
-        url_test("/firefox/security/", "/firefox/features/independent/"),
+        url_test("/firefox/security/", "/firefox/features/private/"),
         url_test("/firefox/technology/", "https://developer.mozilla.org/docs/Tools"),
         url_test("/firefox/sms/{,sent}", "/firefox/"),
         # Previously Bug 979527 / Github #10004 "Getting Started" Page
@@ -842,8 +842,6 @@ URLS = flatten(
         url_test("/firefox/tiles/", "https://support.mozilla.org/kb/about-tiles-new-tab"),
         # Bug 1252332
         url_test("/sync/", "/firefox/sync/"),
-        # issue 9490
-        url_test("/firefox/features/sync/", "/firefox/sync/"),
         url_test("/projects/bonecho/", "/firefox/channel/desktop/"),
         url_test("/projects/bonsai/", "https://wiki.mozilla.org/Bonsai"),
         url_test("/projects/camino/{,homepage.html}", "http://caminobrowser.org/"),
@@ -966,8 +964,8 @@ URLS = flatten(
         url_test("/firefox/android/faq/", "https://support.mozilla.org/products/mobile"),
         # bug 1392796
         url_test("/firefox/desktop/fast/", "/firefox/features/fast/"),
-        url_test("/firefox/desktop/trust/", "/firefox/features/independent/"),
-        url_test("/firefox/desktop/tips/", "/firefox/features/"),
+        url_test("/firefox/desktop/trust/", "/firefox/features/private/"),
+        url_test("/firefox/desktop/tips/", "/firefox/features/tips/"),
         url_test("/firefox/desktop/customize/", "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars"),
         url_test("/firefox/private-browsing/", "/firefox/features/private-browsing/"),
         # bug 1405436
@@ -975,7 +973,7 @@ URLS = flatten(
         url_test("/firefox/organic/", "/firefox/"),
         url_test("/firefox/landing/better/", "/firefox/"),
         url_test("/firefox/{new/,}addons/", "https://addons.mozilla.org"),
-        url_test("/firefox/tips/", "/firefox/features/"),
+        url_test("/firefox/tips/", "/firefox/features/tips/"),
         url_test("/firefox/new/en", "/firefox/new/"),
         # These are a wordpress artifact and result in a Left to Right Mark unicode control character
         # https://en.wikipedia.org/wiki/Left-to-right_mark

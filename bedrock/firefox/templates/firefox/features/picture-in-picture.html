@@ -29,11 +29,20 @@
   {{ css_bundle('firefox-features-pip') }}
 {% endblock %}
 
-{% block sub_navigation %}
-  {% include "firefox/features/includes/subnav.html" %}
-{% endblock %}
+{% block sub_navigation %}{% endblock %}
 
 {% block content %}
+  <nav class="mzp-c-breadcrumb">
+    <ol class="mzp-c-breadcrumb-list">
+      <li class="mzp-c-breadcrumb-item">
+        <a href="{{ url('firefox.features.index') }}">{{ ftl('features-shared-firefox-features') }}</a>
+      </li>
+      <li class="mzp-c-breadcrumb-item">
+        {{ ftl('features-pip-picture-in-picture') }}
+      </li>
+    </ol>
+  </nav>
+
   {% call split(
     block_class='mzp-l-split-center-on-sm-md mzp-t-split-nospace',
     theme_class='mzp-t-dark',
@@ -41,8 +50,7 @@
     image=resp_img('img/firefox/features/pip/pip-hero.jpg', optional_attributes={ 'class': 'mzp-c-split-media-asset'}),
     media_after=True,
   ) %}
-    <h1 class="c-hero-pretitle">{{ ftl('features-pip-new-feature-firefox-multi-picture', fallback='features-pip-cool-feature-picture-in-picture') }}</h1>
-    <h2 class="mzp-u-title-lg">{{ ftl('features-pip-get-more-done-with-pop-out-videos') }}</h2>
+    <h1 class="mzp-u-title-lg">{{ ftl('features-pip-get-more-done-with-pop-out-videos') }}</h1>
     <p>{{ ftl('features-pip-got-things-to-do-do-both-with') }}</p>
     {{ download_firefox(dom_id='features-pip-download-primary', download_location='primary cta') }}
   {% endcall %}

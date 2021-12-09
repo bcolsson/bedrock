@@ -5,55 +5,40 @@
 ### URL: https://www-dev.allizom.org/firefox/features/
 
 # HTML page title
-features-index-protect-your-privacy-and-browse = Protect your privacy and browse faster with { -brand-name-firefox } features
+features-index-firefox-browser-features = { -brand-name-firefox } browser features
 
 # HTML page description
-features-index-youre-in-control-with-firefoxs = You’re in control with { -brand-name-firefox }’s easy-to-use features that protect your privacy and browsing speeds.
+features-index-firefox-is-the-fast-lightweight = { -brand-name-firefox } is the fast, lightweight, privacy-focused browser that works across all your devices.
 
-# Hero title
-features-index-firefox-features = { -brand-name-firefox } features
+features-index-is-firefox-a-fast-browser = Is { -brand-name-firefox } a fast browser?
+features-index-firefox-uses-less-memory-than = { -brand-name-firefox } uses less memory than { -brand-name-chrome }, so your other programs can keep running at top speed.
+features-index-is-firefox-a-private-browser = Is { -brand-name-firefox } a private browser?
+features-index-were-focused-on-your-right-to = We’re focused on your right to privacy. Your data, your web activity, your life online is protected with { -brand-name-firefox }.
+features-index-free-password-manager = Free password manager
+features-index-get-help-creating-new-passwords = Get help creating new passwords, auto-fill online forms, and log in automatically.
+features-index-customize-your-firefox-browser = Customize your { -brand-name-firefox } browser
+features-index-choose-how-your-browser-looks = Choose how your browser looks with thousands of free themes.
+features-index-firefox-browser-sync = { -brand-name-firefox } browser sync
+features-index-access-your-firefox-bookmarks = Access your { -brand-name-firefox } bookmarks, passwords, and open tabs and more from any device.
+features-index-bookmark-manager = Bookmark manager
+features-index-organize-your-bookmarks-with = Organize your bookmarks with folders and tags.
+features-index-private-browsing-mode = Private browsing mode
+features-index-automatically-delete-cookies = Automatically delete cookies and erase your browser history when you close it.
+features-index-firefox-add-ons-and-browser-extensions = { -brand-name-firefox } add-ons and browser extensions
+features-index-add-new-tools-capabilities-and = Add new tools, capabilities and fun stuff to your browser.
+features-index-pinned-browser-tabs = Pinned browser tabs
+features-index-keep-your-favorite-pages-open = Keep your favorite pages open and just a click away. Use Pinned Tabs to keep an eye on your email or messaging apps.
+features-index-eyedropper-tool = Eyedropper tool
+features-index-identify-the-exact-color-on-a = Identify the exact color on a page and copy its hex code.
+features-index-pdf-editor = PDF editor
+features-index-view-and-edit-pdf-files = View and edit PDF files right in { -brand-name-firefox }.
+features-index-fingerprinter-blocking = Fingerprinter blocking
+features-index-ad-tracker-blocking = Ad tracker blocking
+features-index-firefox-automatically-blocks = { -brand-name-firefox } automatically blocks 2000+ ad trackers from following you around the internet.
 
-# Hero description
-features-index-firefox-is-fast = { -brand-name-firefox } is the fast, lightweight, privacy-focused browser that works across all your devices.
-
-features-index-add-powerful-functions = Add powerful functions, useful features and even a little fun to your { -brand-name-firefox } browser.
-features-index-see-all = See all extensions
-features-index-give-your-browser = Give your browser the look you want  with thousands of different themes.
-features-index-important-stuff = Make sure all your important stuff — internet searches, passwords, open tabs — appears where you need it on every device.
-features-index-get-an-account = Get a { -brand-name-firefox-account }
-features-index-use-the-bookmark = Use the bookmark star icon to stay organized and add custom names and folders quickly.
-features-index-from-the-company = From a company that puts people before profit
-features-index-private-browsing-mode = Private Browsing mode deletes cookie data and your browsing history every time you close it.
-features-index-firefox-automatically = { -brand-name-firefox } automatically blocks 2000+ ad trackers from following you around the internet.
-features-index-access-all-passwords = { -brand-name-firefox-lockwise } lets you access all the passwords you’ve saved in { -brand-name-firefox } — and it’s free.
-features-index-just-enough = { -brand-name-firefox } uses just enough memory to create a smooth experience so your computer stays responsive to other tasks.
-features-index-use-less-memory = { -brand-name-firefox } uses less memory than { -brand-name-chrome }, so your other programs can keep running at top speed.
-features-index-open-source-minds = Open source. Open minds.
-features-index-mozilla-creates = { -brand-name-mozilla } creates powerful web tech for everyone.
-features-index-see-what-makes-us-different = See what makes us different
-features-index-by-non-profit-mozilla = By non-profit, { -brand-name-mozilla }
-features-index-by-not-for-profit-mozilla = By not-for-profit, { -brand-name-mozilla }
-features-index-keep-corporate-power = Keep corporate power in check
-features-index-independent-browser = { -brand-name-firefox } is the only major independent browser.
-features-index-on-a-mission = On a mission to keep the internet open and accessible to all.
-features-index-read-mozillas-mission = Read { -brand-name-mozilla }’s mission
-features-index-choose-independence = Choose independence
-features-index-opted-in-to-privacy-so-you = Opted-in to privacy, so you can browse freely.
-features-index-read-our-privacy-policy = Read our privacy policy
-features-index-private-by-default = Private by default
-features-index-enhanced-tracking = Enhanced tracking protection
-features-index-we-dont-sell-access-to-your = We don’t sell access to your online data. Period.
-features-index-get-firefox-for-privacy = Get { -brand-name-firefox } for privacy
-features-index-firefox-vs = { -brand-name-firefox } vs. other browsers
-features-index-stack-up = See how { -brand-name-firefox } stacks up against other popular browsers.
-features-index-compare-browsers = Compare browsers
-features-index-see-themes = See top themes
-features-index-download-latest = Download the latest { -brand-name-firefox }
-features-index-fingerprinter-blocking = Fingerprinter Blocking
-features-index-fingerprinting-is-a = Fingerprinting is a type of online tracking that’s more invasive than ordinary cookie-based tracking — that’s why { -brand-name-firefox-browser } blocks it.
-features-index-block-fingerprinters = Block fingerprinters
+# "Ditch" is slang for discarding something unwanted. Alternative: "Get rid of sticky ads..."
+features-index-ditch-the-sticky-ads = Ditch the sticky ads following you around with { -brand-name-firefox}’s built-in fingerprinting blockers.
 features-index-translate-the-web = Translate the web
-features-index-translate-more-than = Translate from more than 100 languages to your language directly in your { -brand-name-firefox-browser } - easier than ever.
-features-index-translate-to-your = Translate to your language
+features-index-translate-more-than = Translate from more than 100 languages to your language directly in your { -brand-name-firefox } browser — easier than ever.
 features-index-picture-in-picture = Picture-in-Picture
 features-index-got-things-to-do = Got things to do and things to watch? Do both using Picture-in-Picture in { -brand-name-firefox }.

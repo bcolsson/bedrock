@@ -4,40 +4,27 @@
 
 ### URL: https://www-dev.allizom.org/firefox/features/bookmarks/
 
-# HTML page title
-features-bookmarks-firefox-browser-better = { -brand-name-firefox-browser }: Better bookmarks everywhere you go
+# page title
+bookmark-manager-bookmark-manager = Bookmark manager
 
 # HTML page description
-features-bookmarks-easily-organize-your-bookmarks = Easily organize your bookmarks into folder and access them across all your devices, from desktop to mobile.
-features-bookmarks-better-bookmarks = Better bookmarks
-features-bookmarks-dont-agonize-lovers-of = Don’t agonize, lovers of bookmarking. Organize with { -brand-name-firefox }.
-
-# File means to save (that bookmark).
-features-bookmarks-file-that-bookmark = File that bookmark
-
-# Dial in means to access/use (the bookmarks).
-features-bookmarks-get-your-faves-all-sorted = Get your faves all sorted with the bookmark star icon, which lets you add custom names and folders quickly. Then dial in your bookmarks toolbar to make sure you never lose sight of the links you love.
-
-# Fly here means to have your bookmark go wherever you go.
-features-bookmarks-fly-with-that-bookmark = Fly with that bookmark
+bookmark-manager-organize-your-bookmarks-with = Organize your bookmarks with folders and tags.
 
 # Variables:
-#   $url (url) - link to https://www.mozilla.org/firefox/pocket/
-# On the fly here means on the move with you.
-features-bookmarks-take-your-favorites-on = Take your favorites on the fly. Use { -brand-name-firefox-sync } to access your bookmarks across all your devices, from desktop to mobile. Or try <a href="{ $url }">{ -brand-name-pocket }</a> to save any online article, or page and come back to later – even without internet.
+#   $sync (url) - link to https://www.mozilla.org/firefox/features/sync/
+bookmark-manager-bookmarks-are-links-you-save = Bookmarks are links you save in your browser so you can quickly and easily get back to your favorite places on the web. { -brand-name-firefox } includes a handy bookmark manager so you can organize, search, update and <a { $sync }>synchronize all your saved links across all your devices</a>.
+bookmark-manager-organize-your-boomarks-into = Organize your bookmarks into searchable folders
+bookmark-manager-collect-your-bookmarks-in-folders = Collect your bookmarks in folders and tag them with more details. You can also sort your bookmarks to quickly find the ones you need.
 
-features-bookmarks-customize-that-bookmark = Customize that bookmark
+# Used as an accessible text alternative for an image
+bookmark-manager-image-of-the-bookmark-manager = Image of the bookmark manager window in { -brand-name-firefox }.
+bookmark-manager-easily-import-bookmarks = Easily import bookmarks
+bookmark-manager-you-can-import-your-bookmarks = You can import your bookmarks from { -brand-name-chrome }, { -brand-name-safari } or { -brand-name-edge } with { -brand-name-firefox }’s import wizard. Just click Bookmarks > Manage Bookmarks and then select “Import and Backup”.
 
-# Obsolete string
-# Futz with means to spend a lot of time on something.
-features-bookmarks-futz-with-that-bookmark = Futz with that bookmark
+# Used as an accessible text alternative for an image
+bookmark-manager-image-of-the-firefox-import-wizard = Image of the { -brand-name-firefox } import wizard dialog, showing options to import settings and data from other browsers.
+bookmark-manager-bookmarks-toolbar = Bookmarks toolbar
+bookmark-manager-get-quick-access-to-your = Get quick access to your favorite bookmarks in the menu at the top of { -brand-name-firefox } or pin them to your toolbar.
 
-# Variables:
-#   $url (url) - link to https://addons.mozilla.org/firefox/search/?q=bookmark%20managers
-features-bookmarks-practice-your-precision = Practice your precision with every bookmark manager <a href="{ $url }">add-on</a> you can think of, from full page snapshots to quick-switch sidebars to locked-down-tight private bookmarks.
-
-# Obsolete string
-# Variables:
-#   $url (url) - link to https://addons.mozilla.org/firefox/search/?q=bookmark%20managers
-# "Exactitude" means precision.
-features-bookmarks-practice-your-exactitude = Practice your exactitude with every bookmark manager <a href="{ $url }">add-on</a> you can think of, from full page snapshots to quick-switch sidebars to locked-down-tight private bookmarks.
+# Used as an accessible text alternative for an image
+bookmark-manager-image-of-firefox-showing-a-collection = Image of { -brand-name-firefox } showing a collection of bookmarks in a toolbar at the top of the browser window.
