@@ -4,3 +4,66 @@
 
 $font-path: '/media/protocol/fonts';
 $image-path: '/media/protocol/img';
+$brand-theme: 'firefox';
+
+@import '~@mozilla-protocol/core/protocol/css/includes/lib';
+@import '~@mozilla-protocol/core/protocol/css/components/split';
+@import '~@mozilla-protocol/core/protocol/css/components/emphasis-box';
+@import '~@mozilla-protocol/core/protocol/css/templates/multi-column';
+
+.u-center {
+    text-align: center;
+}
+
+.t-intro,
+.t-features {
+    background-color: $color-marketing-gray-20;
+}
+
+.t-intro {
+    padding-bottom: $layout-lg;
+
+    .c-phone {
+        height: 660px;
+        width: 550px;
+        position: relative;
+        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .mzp-t-dark {
+        background-color: $color-violet-80;
+    }
+}
+
+.mzp-l-columns {
+    text-align: center;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h3,
+    p {
+        @include bidi(((
+            text-align, left, right),
+        ));
+    }
+}
+
+.c-features .mzp-c-split {
+
+    @media #{$mq-lg} {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
