@@ -41,4 +41,7 @@ urlpatterns = (
         views.resource_center_article_view,
         name="products.vpn.resource-center.article",
     ),
+    # relay
+    path("relay/", views.relay_landing_page, name="products.relay.landing"),
+    path("relay/invite/", views.relay_invite_page, name="products.relay.invite"),
 )
