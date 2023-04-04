@@ -8,3 +8,4 @@ relay-shared-product-name = { -brand-name-firefox-relay }
 
 # Subnav strings
 relay-shared-subnav-title = { -brand-name-firefox-relay }
+relay-shared-subnav-premium = { -brand-name-relay-premium }

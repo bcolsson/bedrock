@@ -1179,6 +1179,8 @@ SENTRY_FRONTEND_DSN = config(
 # Issue 7508 - Convert.com experiment sandbox
 CONVERT_PROJECT_ID = "10039-1003350" if DEV else "10039-1003343"
 
+# VPN ==========================================================================================
+
 # URL for Mozilla VPN sign-in links
 # ***This URL *MUST* end in a traling slash!***
 VPN_ENDPOINT = config("VPN_ENDPOINT", default="https://stage-vpn.guardian.nonprod.cloudops.mozgcp.net/" if DEV else "https://vpn.mozilla.org/")
@@ -1497,3 +1499,11 @@ VPN_RELAY_BUNDLE_COUNTRY_CODES = [
     "CA",  # Canada
     "US",  # United States of America
 ]
+
+# RELAY ==============================================================
+
+# Relay email mask domain
+MOZMAIL_DOMAIN = "mozmail.com"
+
+# Number of free relay aliases
+MAX_NUM_FREE_ALIASES = 5
