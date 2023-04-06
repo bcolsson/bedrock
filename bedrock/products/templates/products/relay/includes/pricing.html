@@ -1,0 +1,214 @@
+{#
+ This Source Code Form is subject to the terms of the Mozilla Public
+ License, v. 2.0. If a copy of the MPL was not distributed with this
+ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#}
+
+<section>
+  <table class="mzp-u-data-table c-plans-desktop">
+    <thead>
+      <tr>
+        <th scope="col">{{ ftl('plan-matrix-heading-features') }}</th>
+        <th scope="col">{{ ftl('plan-matrix-heading-plan-free') }}</th>
+        <th scope="col">{{ ftl('plan-matrix-heading-plan-premium') }}</th>
+        <th scope="col">{{ ftl('plan-matrix-heading-plan-phones') }}</th>
+        <th scope="col"><strong>{{ ftl('plan-matrix-heading-plan-bundle-2') }}</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-email-masks') }}</th>
+        <td>5</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-browser-extension') }}</th>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-email-tracker-removal') }}</th>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-promo-email-blocking') }}</th>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-email-subdomain') }}</th>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-email-reply') }}</th>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-phone-mask') }}</th>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+      <tr>
+        <th scope="row">{{ ftl('plan-matrix-feature-mobile-vpn') }}</th>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td>
+          <img src="not.svg" alt="{{ ftl('plan-matrix-feature-not-included') }}"></td>
+        </td>
+        <td><img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">
+          <div>Price</div>
+        </th>
+        <td>
+          <div>
+          <div> Free <a href="/accounts/fxa/login/?process=login"> Get ⁨Relay⁩ <small> </small> </a></div>
+          </div>
+        </td>
+        <td>
+          <div>
+            <div>
+              <div>
+                <label><input type="radio" name="plan-email" value="monthly">{{ ftl('plan-matrix-price-period-monthly') }}</label>
+                <label><input type="radio" name="plan-email" value="yearly">{{ ftl('plan-matrix-price-period-yearly') }}</label>
+              </div>
+              </div>
+              <div> ⁨$0.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_KGizMiBqUJdYoY?plan=price_1LXUdlJNcmPzuWtRKTYg7mpZ"> Sign Up <small> Billed annually</small> </a></div>
+          </div>
+        </td>
+        <td>
+        <div>
+          <div>
+            <div>
+              <label><input type="radio" name="plan-email-phone" value="monthly">{{ ftl('plan-matrix-price-period-monthly') }}</label>
+              <label><input type="radio" name="plan-email-phone" value="yearly">{{ ftl('plan-matrix-price-period-yearly') }}</label>
+            </div>
+          </div>
+        <div> ⁨$3.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_KGizMiBqUJdYoY?plan=price_1Li15WJNcmPzuWtRIh0F4VwP"> Sign Up <small> Billed annually</small> </a></div>
+        </div>
+        </td>
+        <td>
+        <div>
+          <div>
+            <p> {{ ftl('plan-matrix-price-vpn-discount-promo', savings='TKTK') }} </p>
+          </div>
+          <div> ⁨$6.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_MIex7Q079igFZJ?plan=price_1LwoSDJNcmPzuWtR6wPJZeoh"> Sign Up <small> Billed annually</small> </a></div>
+        </div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+
+  <div class="c-plans-mobile">
+    <ul>
+      <li class="c-plan">
+        <h3 class="mzp-u-title-xs">{{ ftl('plan-matrix-heading-plan-free') }}</h3>
+        <ul class="c-plan-features">
+          <li>{{ ftl('plan-matrix-feature-mobile-email-masks') }} <span>5</span></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-browser-extension') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-tracker-removal') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+        </ul>
+        <div class="c-plan-footer">
+          <div> Free <a href="/accounts/fxa/login/?process=login"> Get ⁨Relay⁩ </a></div>
+        </div>
+      </li>
+      <li class="c-plan">
+        <h3 class="mzp-u-title-xs">{{ ftl('plan-matrix-heading-plan-premium') }}</h3>
+        <ul class="c-plan-features">
+          <li>{{ ftl('plan-matrix-feature-mobile-email-masks') }} <span>{{ ftl('plan-matrix-feature-count-unlimited') }}</span></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-browser-extension') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-tracker-removal') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-promo-email-blocking') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-subdomain') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-reply') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+        </ul>
+        <div class="c-plan-footer">
+          <div>
+            <div>
+              <label><input type="radio" name="plan-email-mobile" value="monthly">{{ ftl('plan-matrix-price-period-monthly') }}</label>
+              <label><input type="radio" name="plan-email-mobile" value="yearly">{{ ftl('plan-matrix-price-period-yearly') }}</label>
+            </div>
+          </div>
+          <div> ⁨$0.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_KGizMiBqUJdYoY?plan=price_1LXUdlJNcmPzuWtRKTYg7mpZ"> Sign Up <small> Billed annually</small> </a></div>
+        </div>
+      </li>
+      <li class="c-plan">
+        <h3 class="mzp-u-title-xs">{{ ftl('plan-matrix-heading-plan-phones') }}</h3>
+        <ul class="c-plan-features">
+          <li>{{ ftl('plan-matrix-feature-mobile-email-masks') }} <span>{{ ftl('plan-matrix-feature-count-unlimited') }}</span></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-browser-extension') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-tracker-removal') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-promo-email-blocking') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-subdomain') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-reply') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-phone-mask') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+        </ul>
+      <div class="c-plan-footer">
+        <div>
+          <div>
+            <label><input type="radio" name="plan-email-phone-mobile" value="monthly">{{ ftl('plan-matrix-price-period-monthly') }}</label>
+            <label><input type="radio" name="plan-email-phone-mobile" value="yearly">{{ ftl('plan-matrix-price-period-yearly') }}</label>
+          </div>
+        </div>
+        <div> ⁨$3.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_KGizMiBqUJdYoY?plan=price_1Li15WJNcmPzuWtRIh0F4VwP"> Sign Up <small> Billed annually</small> </a></div>
+      </div>
+      </li>
+      <li class="c-plan">
+        <h3 class="mzp-u-title-xs">{{ ftl('plan-matrix-heading-plan-bundle-2') }}</h3>
+        <ul class="c-plan-features">
+          <li>{{ ftl('plan-matrix-feature-mobile-email-masks') }} <span>{{ ftl('plan-matrix-feature-count-unlimited') }}</span></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-browser-extension') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-tracker-removal') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-promo-email-blocking') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-subdomain') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-email-reply') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-phone-mask') }} <img src="{{ static('img/products/relay/icon-check.svg') }}" alt="{{ ftl('plan-matrix-feature-included') }}"></li>
+          <li>{{ ftl('plan-matrix-feature-mobile-vpn') }}</li>
+        </ul>
+      <div class="c-plan-footer">
+        <div>
+          <p>{{ ftl('plan-matrix-price-vpn-discount-promo', savings='TKTK') }}</p>
+        </div>
+        <div> ⁨$6.99⁩/mo. <a href="https://accounts.firefox.com/subscriptions/products/prod_MIex7Q079igFZJ?plan=price_1LwoSDJNcmPzuWtR6wPJZeoh"> Sign Up <small> Billed annually</small> </a></div>
+      </div>
+      </li>
+    </ul>
+  </div>
+
+</section>

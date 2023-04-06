@@ -11,6 +11,9 @@ $brand-theme: 'firefox';
 @import '~@mozilla-protocol/core/protocol/css/components/emphasis-box';
 @import '~@mozilla-protocol/core/protocol/css/templates/multi-column';
 
+@import 'pricing';
+@import 'bundle';
+
 .u-center {
     text-align: center;
 }
@@ -66,4 +69,16 @@ $brand-theme: 'firefox';
         padding-top: 0;
         padding-bottom: 0;
     }
+}
+
+summary {
+    padding: $layout-sm 0;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+details {
+    border-bottom: 1px solid $color-marketing-gray-20;
 }

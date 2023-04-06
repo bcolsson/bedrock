@@ -228,7 +228,7 @@ def resource_center_article_view(request, slug):
 @require_safe
 def relay_landing_page(request):
     template_name = "products/relay/landing.html"
-    ftl_files = ["products/relay/landing", "products/relay/shared"]
+    ftl_files = ["products/relay/landing", "products/relay/faq", "products/relay/shared"]
 
     context = {}
 

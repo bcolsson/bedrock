@@ -55,30 +55,27 @@
 
 {% endcall %}
 
-  <div class="mzp-l-content">
-    <div class="mzp-c-emphasis-box mzp-t-dark">
+  <div class="mzp-l-content mzp-t-content-nospace">
+    <div class="mzp-c-emphasis-box mzp-t-dark t-bundle">
 
-      <img src="{{ static('img/products/relay/landing/bundle/woman-1280w.png') }}" alt="" width="768" height="765" loading="lazy">
-
-      <h2>{{ ftl('bundle-banner-header-2', monthly_price="TKTK") }}</h2>
+      <h2 class="mzp-u-title-sm">{{ ftl('bundle-banner-header-2', monthly_price="TKTK") }}</h2>
       <p>{{ ftl('bundle-banner-body-3', savings="TKTK") }}</p>
-      <h3>{{ ftl('bundle-banner-plan-header-2') }}</h3>
-      <ul>
+      <h3 class="mzp-u-title-3xs">{{ ftl('bundle-banner-plan-header-2') }}</h3>
+      <ul class="c-bundle-list">
         <li>{{ ftl('bundle-banner-plan-modules-email-masking') }}</li>
         <li>{{ ftl('bundle-banner-plan-modules-phone-masking') }}</li>
         <li>{{ ftl('bundle-banner-plan-modules-mozilla-vpn') }}</li>
-        <li>{{ ftl('bundle-feature-one',num_vpn_servers='TKTK' ) }}</li>
-        <li>{{ ftl('bundle-feature-two', num_vpn_countries="TKTK") }}</li>
-        <li>{{ ftl('bundle-feature-three') }}</li>
+        <li class="c-bundle-stat">{{ ftl('bundle-feature-one',num_vpn_servers='TKTK' ) }}</li>
+        <li class="c-bundle-stat">{{ ftl('bundle-feature-two', num_vpn_countries="TKTK") }}</li>
+        <li class="c-bundle-stat">{{ ftl('bundle-feature-three') }}</li>
       </ul>
-      <ul>
-        <p>
+      <p>
         {{ ftl('bundle-banner-cta') }}
 
         {{ ftl('bundle-banner-alt') }}
 
-        <em>{{ ftl('bundle-banner-money-back-guarantee-2', days_guarantee="TKTK") }}</em>
-        </p>
+        <small>{{ ftl('bundle-banner-money-back-guarantee-2', days_guarantee="TKTK") }}</small>
+      </p>
     </div>
   </div>
 
@@ -86,7 +83,7 @@
 
 <section class="mzp-l-content">
 
-  <h2 class="mzp-l-content u-center">{{ ftl('how-it-works-section-title') }}</h2>
+  <h2 class="u-center">{{ ftl('how-it-works-section-title') }}</h2>
 
   <div class="mzp-l-columns mzp-t-columns-three">
     <div>
@@ -114,15 +111,21 @@
   </section>
 
 
-  <section>
-    <h2>{{ ftl('plan-matrix-offer-title') }}</h2>
-    <p>{{ ftl('plan-matrix-offer-body') }}</p>
-    <p>TABLES GOES HERE<p>
+  <section class="mzp-l-content">
+    <h2 class="u-center">{{ ftl('plan-matrix-offer-title') }}</h2>
+    <p class="u-center">{{ ftl('plan-matrix-offer-body') }}</p>
+
+      {% include 'products/relay/includes/pricing.html' %}
+
+
+
+
+
   </section>
 
   <section>
 
-    <h2 class="mzp-l-content u-center">{{ ftl('highlighted-features-section-title') }}</h2>
+    <h2 class="mzp-l-content mzp-t-content-nospace u-center">{{ ftl('highlighted-features-section-title') }}</h2>
 
       {% call split(
         block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
@@ -185,7 +188,34 @@
 
 <section class="mzp-l-content">
   <h2>{{ ftl('landing-faq-headline') }}</h2>
-  <p><a href="TKTK">{{ ftl('landing-faq-cta') }}</a></p>
+  <p><a href="TKTK" class="mzp-c-cta-link">{{ ftl('landing-faq-cta') }}</a></p>
+
+
+  <details>
+    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-availability-question') }}</h3></summary>
+    <p>{{ ftl('faq-question-landing-page-availability') }}</p>
+  </details>
+
+
+  <details>
+    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-what-is-question-2') }}</h3></summary>
+    <p>{{ ftl('faq-question-what-is-answer-2') }}</p>
+  </details>
+
+
+  <details>
+    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-use-cases-question-2') }}</h3></summary>
+    <p>{{ ftl('faq-question-use-cases-answer-part1-2') }}</p>
+    <p>{{ ftl('faq-question-use-cases-answer-part2-2') }}</p>
+  </details>
+
+
+  <details>
+    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-browser-support-question') }}</h3></summary>
+    <p>{{ ftl('faq-question-browser-support-answer-2') }}</p>
+  </details>
+
+
 </section>
 
 {% endblock %}

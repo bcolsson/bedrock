@@ -1,0 +1,63 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+$font-path: '/media/protocol/fonts';
+$image-path: '/media/protocol/img';
+$brand-theme: 'firefox';
+
+@import '~@mozilla-protocol/core/protocol/css/includes/lib';
+
+.c-plans-desktop {
+    tbody td {
+        text-align: centers;
+    }
+}
+
+.c-plans-mobile {
+    > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-md;
+        list-style-type: none;
+    }
+
+    > ul > li {
+        flex: 1 0 304px;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-md;
+        max-width: 100%;
+        background-color: #fff;
+        border-radius: $border-radius-md;
+        padding: $spacing-md;
+    }
+}
+
+.c-plan {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.c-plan-features {
+    width: 100%;
+    align-self: start;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: $spacing-sm;
+    }
+}
+
+.c-plan-footer {
+    text-align: center;
+
+    small {
+        display: block;
+    }
+}
