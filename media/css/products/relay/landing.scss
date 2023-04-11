@@ -20,7 +20,7 @@ $brand-theme: 'firefox';
 
 .t-intro,
 .t-features {
-    background-color: $color-marketing-gray-20;
+    background-color: $color-marketing-gray-10;
 }
 
 .t-intro {
@@ -34,10 +34,10 @@ $brand-theme: 'firefox';
 
         img {
             display: block;
+            left: 50%;
             margin: 0 auto;
             position: absolute;
             top: 0;
-            left: 50%;
             transform: translateX(-50%);
         }
     }
@@ -71,8 +71,14 @@ $brand-theme: 'firefox';
     }
 }
 
+.c-highlights {
+    max-width: $content-xl;
+    margin: 0 auto;
+}
+
 summary {
-    padding: $layout-sm 0;
+    padding-top: $layout-sm;
+    padding-bottom: $layout-sm;
 
     h3 {
         margin: 0;

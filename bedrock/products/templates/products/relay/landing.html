@@ -35,9 +35,9 @@
 {% set intro_image = '
   <div class="mzp-c-split-media-asset">
     <div class="c-phone">
-      <img src="' + static('img/products/relay/landing/intro/hex.svg') + '" alt="" width="599" height="549" >
-      <img src="' + static('img/products/relay/landing/intro/phone-nopremium.svg') + '" alt="" width="369" height="657">
-      <img src="' + static('img/products/relay/landing/intro/fg.svg') + '" alt="" width="509" height="575">
+      <img src="' + static('img/products/relay/landing/intro/phone-outline.svg') + '" alt="" width="599" height="549" >
+      <!-- <img src="' + static('img/products/relay/landing/intro/phone-nopremium.svg') + '" alt="" width="369" height="657">
+      <img src="' + static('img/products/relay/landing/intro/fg.svg') + '" alt="" width="509" height="575"> -->
     </div>
   </div>' %}
 
@@ -56,27 +56,7 @@
 {% endcall %}
 
   <div class="mzp-l-content mzp-t-content-nospace">
-    <div class="mzp-c-emphasis-box mzp-t-dark t-bundle">
-
-      <h2 class="mzp-u-title-sm">{{ ftl('bundle-banner-header-2', monthly_price="TKTK") }}</h2>
-      <p>{{ ftl('bundle-banner-body-3', savings="TKTK") }}</p>
-      <h3 class="mzp-u-title-3xs">{{ ftl('bundle-banner-plan-header-2') }}</h3>
-      <ul class="c-bundle-list">
-        <li>{{ ftl('bundle-banner-plan-modules-email-masking') }}</li>
-        <li>{{ ftl('bundle-banner-plan-modules-phone-masking') }}</li>
-        <li>{{ ftl('bundle-banner-plan-modules-mozilla-vpn') }}</li>
-        <li class="c-bundle-stat">{{ ftl('bundle-feature-one',num_vpn_servers='TKTK' ) }}</li>
-        <li class="c-bundle-stat">{{ ftl('bundle-feature-two', num_vpn_countries="TKTK") }}</li>
-        <li class="c-bundle-stat">{{ ftl('bundle-feature-three') }}</li>
-      </ul>
-      <p>
-        {{ ftl('bundle-banner-cta') }}
-
-        {{ ftl('bundle-banner-alt') }}
-
-        <small>{{ ftl('bundle-banner-money-back-guarantee-2', days_guarantee="TKTK") }}</small>
-      </p>
-    </div>
+    {% include 'products/relay/includes/bundle.html' %}
   </div>
 
 </section>
@@ -117,64 +97,56 @@
 
       {% include 'products/relay/includes/pricing.html' %}
 
-
-
-
-
   </section>
 
-  <section>
+  <section class="c-highlights">
 
-    <h2 class="mzp-l-content mzp-t-content-nospace u-center">{{ ftl('highlighted-features-section-title') }}</h2>
-
+    <h2 class="mzp-l-content u-center">{{ ftl('highlighted-features-section-title') }}</h2>
       {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
-        media_class='mzp-l-split-media-overflow',
+        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
+        media_class='mzp-l-split-h-end',
         image='<img src="' + static('img/products/relay/landing/features/features-unlimited-email-masks.svg') + '" alt="" loading="lazy">'
       ) %}
-
         <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-unlimited-masks-headline') }}</h3>
         <p>{{ ftl('highlighted-features-section-unlimited-masks-body', mask_limit="TKTK") }}</p>
-
       {% endcall %}
 
 
       {% call split(
-        block_class='mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
-        media_class='mzp-l-split-media-overflow',
+        block_class='mzp-l-split-center-on-sm-md',
+        media_class='',
         image='<img src="' + static('img/products/relay/landing/features/features-block-promotional-emails.svg') + '" alt="" loading="lazy">'
       ) %}
-
         <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-masks-on-the-go-headline') }}</h3>
         <p>{{ ftl('highlighted-features-section-masks-on-the-go-body', mozmail="TKTK") }}</p>
       {% endcall %}
 
+
       {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
-        media_class='mzp-l-split-media-overflow',
+        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
+        media_class='mzp-l-split-h-end',
         image='<img src="' + static('img/products/relay/landing/features/features-reply-to-emails-anon.svg') + '" alt="" loading="lazy">'
       ) %}
-
         <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-replying-headline') }}</h3>
         <p>{{ ftl('highlighted-features-section-replying-body') }}</p>
       {% endcall %}
 
+
       {% call split(
-        block_class='mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
-        media_class='mzp-l-split-media-overflow',
+        block_class='mzp-l-split-center-on-sm-md',
+        media_class='',
         image='<img src="' + static('img/products/relay/landing/features/features-block-promotional-emails.svg') + '" alt="" loading="lazy">'
       ) %}
-
         <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-block-promotions-headline') }}</h3>
         <p>{{ ftl('highlighted-features-section-block-promotions-body') }}</p>
       {% endcall %}
 
+
       {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-l-split-media-constrain-height',
-        media_class='mzp-l-split-media-overflow',
+        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
+        media_class='mzp-l-split-h-end',
         image='<img src="' + static('img/products/relay/landing/features/features-remove-email-trackers.svg') + '" alt="" loading="lazy">'
       ) %}
-
         <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-remove-trackers-headline') }}</h3>
         <p>{{ ftl('highlighted-features-section-remove-trackers-body') }}</p>
       {% endcall %}
