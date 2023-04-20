@@ -13,6 +13,10 @@ $brand-theme: 'firefox';
     padding-top: 220px;
     position: relative;
 
+    &.mzp-t-dark {
+        background-color: $color-violet-80;
+    }
+
     &::before {
         background-image: url('/media/img/products/relay/landing/bundle/bg-mobile.png');
         background-position: top right;

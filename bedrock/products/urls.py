@@ -47,5 +47,6 @@ urlpatterns = (
 if settings.DEV:
     urlpatterns += (
         path("relay/", views.relay_landing_page, name="products.relay.landing"),
+        path("relay/premium", views.relay_premium_page, name="products.relay.premium"),
         path("relay/invite/", views.relay_invite_page, name="products.relay.invite"),
     )

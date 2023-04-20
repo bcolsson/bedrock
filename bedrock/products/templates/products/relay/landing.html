@@ -30,163 +30,108 @@
 
 {% block content %}
 
-<section class="t-intro">
+<div class="t-hero">
 
-{% set intro_image = '
-  <div class="mzp-c-split-media-asset">
-    <div class="c-phone">
-      <img src="' + static('img/products/relay/landing/intro/phone-outline.svg') + '" alt="" width="599" height="549" >
-      <!-- <img src="' + static('img/products/relay/landing/intro/phone-nopremium.svg') + '" alt="" width="369" height="657">
-      <img src="' + static('img/products/relay/landing/intro/fg.svg') + '" alt="" width="509" height="575"> -->
-    </div>
-  </div>' %}
+  {% call split(
+    block_class='mzp-l-split-pop',
+    theme_class='',
+    media_class='',
+    media_include='products/relay/includes/phone.html'
+  ) %}
+    <h1 class="mzp-u-title-md">{{ ftl('hero-section-title') }}</h1>
+    <p>{{ ftl('hero-section-body') }}</p>
+    <p><button>{{ ftl('hero-section-cta') }}</button></p>
+    <img class="c-brands" src="{{ static('img/products/relay/landing/brands.svg') }}" alt="" width="480" height="54">
+  {% endcall %}
 
-{% call split(
-  block_class='mzp-l-split-pop',
-  theme_class='',
-  media_class='',
-  image=intro_image
-) %}
+  {% include 'products/relay/includes/bundle.html' %}
 
-  <h1 class="mzp-u-title-md">{{ ftl('hero-section-title') }}</h1>
-  <p>{{ ftl('hero-section-body') }}</p>
-  <p>{{ ftl('hero-section-cta') }}</p>
-  <img src="{{ static('img/products/relay/landing/intro/brands.svg') }}" alt="" width="480" height="54">
+</div>
 
-{% endcall %}
-
-  <div class="mzp-l-content mzp-t-content-nospace">
-    {% include 'products/relay/includes/bundle.html' %}
-  </div>
-
-</section>
-
-<section class="mzp-l-content">
-
-  <h2 class="u-center">{{ ftl('how-it-works-section-title') }}</h2>
-
+<section class="mzp-l-content c-works">
+  <h2 class="c-works-heading">{{ ftl('how-it-works-section-title') }}</h2>
   <div class="mzp-l-columns mzp-t-columns-three">
     <div>
-      <img src="{{ static('img/products/relay/landing/how/how-it-works-1.svg') }}" alt="" width="306" height="223" loading="lazy">
+      <img src="{{ static('img/products/relay/landing/how/how-it-works-1.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
       <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-extension-headline') }}</h3>
       <p>{{ ftl('how-it-works-section-extension-body') }}</p>
     </div>
     <div>
-      <img src="{{ static('img/products/relay/landing/how/how-it-works-2.svg') }}" alt="" width="306" height="223" loading="lazy">
+      <img src="{{ static('img/products/relay/landing/how/how-it-works-2.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
       <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-forward-headline') }}</h3>
       <p>{{ ftl('how-it-works-section-forward-body') }}</p>
     </div>
     <div>
-      <img src="{{ static('img/products/relay/landing/how/how-it-works-3.svg') }}" alt="" width="306" height="223" loading="lazy">
+      <img src="{{ static('img/products/relay/landing/how/how-it-works-3.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
         <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-manage-headline') }}</h3>
         <p>{{ ftl('how-it-works-section-manage-body') }}</p>
-
     </div>
   </div>
 </section>
 
-<div class="t-features">
-  <section>
-    <p>reviews LALALA</p>
-  </section>
-
-
+<div class="t-odd">
   <section class="mzp-l-content">
-    <h2 class="u-center">{{ ftl('plan-matrix-offer-title') }}</h2>
-    <p class="u-center">{{ ftl('plan-matrix-offer-body') }}</p>
 
-      {% include 'products/relay/includes/pricing.html' %}
+    <h2>ftl-reviews</h2>
+
+    <p><a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/">Firefox Browser Add-ons</a></p>
+
+    <p>4.1 out of 5 <br>
+    (1,259 reviews)</p>
+
+    <blockquote>
+      <p>I really appreciate the Mozilla team for being so creative and simplifying the anonymizing of my email address. This is a great extension, I highly recommend it to the privacy-aware!</p>
+      <cite>Jon <br>Source: <a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/reviews/1816986/">addons.mozilla.org</a></cite>
+    </blockquote>
+
+    </p>
 
   </section>
 
-  <section class="c-highlights">
 
-    <h2 class="mzp-l-content u-center">{{ ftl('highlighted-features-section-title') }}</h2>
-      {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
-        media_class='mzp-l-split-h-end',
-        image='<img src="' + static('img/products/relay/landing/features/features-unlimited-email-masks.svg') + '" alt="" loading="lazy">'
-      ) %}
-        <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-unlimited-masks-headline') }}</h3>
-        <p>{{ ftl('highlighted-features-section-unlimited-masks-body', mask_limit="TKTK") }}</p>
-      {% endcall %}
-
-
-      {% call split(
-        block_class='mzp-l-split-center-on-sm-md',
-        media_class='',
-        image='<img src="' + static('img/products/relay/landing/features/features-block-promotional-emails.svg') + '" alt="" loading="lazy">'
-      ) %}
-        <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-masks-on-the-go-headline') }}</h3>
-        <p>{{ ftl('highlighted-features-section-masks-on-the-go-body', mozmail="TKTK") }}</p>
-      {% endcall %}
-
-
-      {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
-        media_class='mzp-l-split-h-end',
-        image='<img src="' + static('img/products/relay/landing/features/features-reply-to-emails-anon.svg') + '" alt="" loading="lazy">'
-      ) %}
-        <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-replying-headline') }}</h3>
-        <p>{{ ftl('highlighted-features-section-replying-body') }}</p>
-      {% endcall %}
-
-
-      {% call split(
-        block_class='mzp-l-split-center-on-sm-md',
-        media_class='',
-        image='<img src="' + static('img/products/relay/landing/features/features-block-promotional-emails.svg') + '" alt="" loading="lazy">'
-      ) %}
-        <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-block-promotions-headline') }}</h3>
-        <p>{{ ftl('highlighted-features-section-block-promotions-body') }}</p>
-      {% endcall %}
-
-
-      {% call split(
-        block_class='mzp-l-split-reversed mzp-l-split-center-on-sm-md mzp-t-split-nospace',
-        media_class='mzp-l-split-h-end',
-        image='<img src="' + static('img/products/relay/landing/features/features-remove-email-trackers.svg') + '" alt="" loading="lazy">'
-      ) %}
-        <h3 class="mzp-u-title-2xs">{{ ftl('highlighted-features-section-remove-trackers-headline') }}</h3>
-        <p>{{ ftl('highlighted-features-section-remove-trackers-body') }}</p>
-      {% endcall %}
+  <section class="c-pricing">
+    <h2 class="mzp-u-title-sm">{{ ftl('plan-matrix-offer-title') }}</h2>
+    <p>{{ ftl('plan-matrix-offer-body') }}</p>
+    <div class="mzp-l-content">
+      {% include 'products/relay/includes/matrix.html' %}
+    </div>
   </section>
 
-  <h2 class="mzp-l-content u-center">{{ ftl('highlighted-features-section-bottom-title') }}</h2>
-  <p>{{ ftl('highlighted-features-section-bottom-cta') }}</p>
+  {% include 'products/relay/includes/features.html' %}
+
+  <section class="mzp-l-content u-center">
+    <h2>{{ ftl('highlighted-features-section-bottom-title') }}</h2>
+    <p><button>{{ ftl('highlighted-features-section-bottom-cta') }}</button></p>
+  </section>
 
 
 </div>
 
-<section class="mzp-l-content">
+<section class="mzp-l-content c-landing-faq">
   <h2>{{ ftl('landing-faq-headline') }}</h2>
   <p><a href="TKTK" class="mzp-c-cta-link">{{ ftl('landing-faq-cta') }}</a></p>
+  <div>
+    <details>
+      <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-availability-question') }}</h3></summary>
+      <p>{{ ftl('faq-question-landing-page-availability') }}</p>
+    </details>
 
+    <details>
+      <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-what-is-question-2') }}</h3></summary>
+      <p>{{ ftl('faq-question-what-is-answer-2') }}</p>
+    </details>
 
-  <details>
-    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-availability-question') }}</h3></summary>
-    <p>{{ ftl('faq-question-landing-page-availability') }}</p>
-  </details>
+    <details>
+      <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-use-cases-question-2') }}</h3></summary>
+      <p>{{ ftl('faq-question-use-cases-answer-part1-2') }}</p>
+      <p>{{ ftl('faq-question-use-cases-answer-part2-2') }}</p>
+    </details>
 
-
-  <details>
-    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-what-is-question-2') }}</h3></summary>
-    <p>{{ ftl('faq-question-what-is-answer-2') }}</p>
-  </details>
-
-
-  <details>
-    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-use-cases-question-2') }}</h3></summary>
-    <p>{{ ftl('faq-question-use-cases-answer-part1-2') }}</p>
-    <p>{{ ftl('faq-question-use-cases-answer-part2-2') }}</p>
-  </details>
-
-
-  <details>
-    <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-browser-support-question') }}</h3></summary>
-    <p>{{ ftl('faq-question-browser-support-answer-2') }}</p>
-  </details>
-
+    <details>
+      <summary><h3 class="mzp-u-title-2xs">{{ ftl('faq-question-browser-support-question') }}</h3></summary>
+      <p>{{ ftl('faq-question-browser-support-answer-2') }}</p>
+    </details>
+  </div>
 
 </section>
 

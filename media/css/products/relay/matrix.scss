@@ -8,7 +8,7 @@ $brand-theme: 'firefox';
 
 @import '~@mozilla-protocol/core/protocol/css/includes/lib';
 
-.c-plans-desktop {
+.c-matrix-desktop {
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
@@ -37,6 +37,13 @@ $brand-theme: 'firefox';
         border-top-left-radius: $border-radius-md;
         border-top-right-radius: $border-radius-md;
         color: $color-violet-70;
+        min-width: 180px;
+
+        &:first-child {
+            color: $color-light-gray-70;
+            font-weight: normal;
+            vertical-align: bottom;
+        }
     }
 
     tbody th {
@@ -56,13 +63,21 @@ $brand-theme: 'firefox';
         display: block;
         font-size: 12px;
     }
+
+    th.t-matrix-desktop-bundle {
+        background-color: $color-violet-70;
+        color: $color-white;
+        border-bottom-color: $color-violet-70;
+    }
 }
 
-.c-plans-mobile {
+// * -------------------------------------------------------------------------- */
+
+.c-matrix-mobile {
     > ul {
         display: flex;
         flex-wrap: wrap;
-        gap: $spacing-md;
+        gap: $layout-xs;
         list-style-type: none;
     }
 
@@ -71,23 +86,24 @@ $brand-theme: 'firefox';
         background-color: #fff;
         border-radius: $border-radius-md;
         flex-direction: column;
-        flex: 1 0 304px;
+        flex: 1 0 265px;
         gap: $spacing-md;
         max-width: 100%;
         padding: $spacing-md;
     }
 }
 
-.c-plan {
+.c-matrix-plan {
     display: grid;
     grid-template-rows: min-content auto min-content;
 
     h3 {
+        padding: $spacing-sm;
         text-align: center;
     }
 }
 
-.c-plan-features {
+.c-matrix-features {
     align-self: start;
     width: 100%;
 
@@ -98,10 +114,31 @@ $brand-theme: 'firefox';
     }
 }
 
-.c-plan-footer {
+.t-matrix-mobile-bundle {
+    h3 {
+        background-color: $color-violet-70;
+        border-radius: $border-radius-md $border-radius-md 0 0;
+        color: $color-white;
+        margin: $spacing-md * -1;
+    }
+
+    ul {
+        margin-top: $spacing-lg;
+    }
+}
+
+.c-matrix-footer {
     text-align: center;
 
     small {
         display: block;
+    }
+}
+
+@media #{$mq-md} {
+    .c-matrix-mobile {
+        > ul {
+            gap: $layout-md;
+        }
     }
 }

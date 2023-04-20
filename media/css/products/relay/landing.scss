@@ -11,80 +11,128 @@ $brand-theme: 'firefox';
 @import '~@mozilla-protocol/core/protocol/css/components/emphasis-box';
 @import '~@mozilla-protocol/core/protocol/css/templates/multi-column';
 
-@import 'pricing';
+@import 'phone';
 @import 'bundle';
+@import 'matrix';
 
 .u-center {
     text-align: center;
 }
 
-.t-intro,
-.t-features {
+// * -------------------------------------------------------------------------- */
+// hero
+
+.t-hero {
+    background-color: $color-marketing-gray-10;
+
+    .mzp-l-split-pop {
+        padding-top: $layout-xl;
+    }
+}
+
+.c-brands {
+    border-top: 1px solid $color-marketing-gray-20;
+    border-bottom: 1px solid $color-marketing-gray-20;
+    padding: $spacing-lg 0;
+    margin-top: $spacing-lg;
+}
+
+// * -------------------------------------------------------------------------- */
+// how it works
+
+.c-works-heading {
+    padding-bottom: $layout-lg;
+    text-align: center;
+}
+
+.c-works-img {
+    display: block;
+    margin: 0 auto $spacing-xl auto;
+}
+
+// * -------------------------------------------------------------------------- */
+
+.t-odd {
     background-color: $color-marketing-gray-10;
 }
 
-.t-intro {
-    padding-bottom: $layout-lg;
+// * -------------------------------------------------------------------------- */
+// pricing
 
-    .c-phone {
-        height: 660px;
-        width: 550px;
-        position: relative;
+.c-pricing {
+    h2 {
+        max-width: $content-lg;
+        margin: 0 auto $spacing-lg auto;
         text-align: center;
+    }
 
-        img {
-            display: block;
-            left: 50%;
-            margin: 0 auto;
-            position: absolute;
-            top: 0;
-            transform: translateX(-50%);
+    p {
+        max-width: $content-md;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+// * -------------------------------------------------------------------------- */
+// features
+
+.c-features {
+    max-width: $content-xl;
+    margin: 0 auto;
+
+    h2 {
+        margin-bottom: 0;
+        padding-bottom: $layout-lg;
+    }
+
+    .mzp-c-split {
+        @media #{$mq-lg} {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+// * -------------------------------------------------------------------------- */
+// FAQs
+
+.c-landing-faq {
+    summary {
+        padding-top: $layout-sm;
+        padding-bottom: $layout-sm;
+
+        h3 {
+            margin: 0;
         }
     }
 
-    .mzp-t-dark {
-        background-color: $color-violet-80;
+    details {
+        border-bottom: 1px solid $color-marketing-gray-20;
+
+        &:first-child {
+            border-top: 1px solid $color-marketing-gray-20;
+        }
     }
-}
-
-.mzp-l-columns {
-    text-align: center;
-
-    img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    h3,
-    p {
-        @include bidi(((
-            text-align, left, right),
-        ));
-    }
-}
-
-.c-features .mzp-c-split {
 
     @media #{$mq-lg} {
-        padding-top: 0;
-        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas:
+            'head faq'
+            'link faq';
+        column-gap: $layout-md;
+
+        h2 {
+            grid-area: head;
+        }
+
+        p {
+            grid-area: link;
+        }
+
+        div {
+            grid-area: faq;
+        }
     }
-}
-
-.c-highlights {
-    max-width: $content-xl;
-    margin: 0 auto;
-}
-
-summary {
-    padding-top: $layout-sm;
-    padding-bottom: $layout-sm;
-
-    h3 {
-        margin: 0;
-    }
-}
-
-details {
-    border-bottom: 1px solid $color-marketing-gray-20;
 }
