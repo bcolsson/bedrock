@@ -49,7 +49,7 @@
 </div>
 
 <section class="mzp-l-content c-works">
-  <h2 class="c-works-heading">{{ ftl('how-it-works-section-title') }}</h2>
+  <h2 class="mzp-c-section-heading">{{ ftl('how-it-works-section-title') }}</h2>
   <div class="mzp-l-columns mzp-t-columns-three">
     <div>
       <img src="{{ static('img/products/relay/landing/how/how-it-works-1.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
@@ -74,24 +74,44 @@
 
     <h2>ftl-reviews</h2>
 
-    <p><a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/">Firefox Browser Add-ons</a></p>
+    <div class="c-reviews">
+      <p class="c-review-amo">
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/">
+          <span class="c-review-amo-browser">Firefox Browser</span>
+          <span class="c-review-amo-title">Add-ons</span>
+        </a>
+      </p>
 
-    <p>4.1 out of 5 <br>
-    (1,259 reviews)</p>
+      <p class="c-review-rating">
+        <span class="c-review-rating-number">4.1</span>
+        <span class="c-review-rating-reference">out of 5 (1,259 reviews)</span>
+      </p>
 
-    <blockquote>
-      <p>I really appreciate the Mozilla team for being so creative and simplifying the anonymizing of my email address. This is a great extension, I highly recommend it to the privacy-aware!</p>
-      <cite>Jon <br>Source: <a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/reviews/1816986/">addons.mozilla.org</a></cite>
-    </blockquote>
-
-    </p>
+      <div class="c-review-text">
+        <blockquote class="c-review-quote">
+          <p>I really appreciate the Mozilla team for being so creative and simplifying the anonymizing of my email address. This is a great extension, I highly recommend it to the privacy-aware!</p>
+          <cite class="c-review-cite"><span class="c-review-stars">5/5</span><strong>Jon</strong><span class="c-review-source">Source: <a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/reviews/1816986/">addons.mozilla.org</a></span></cite>
+        </blockquote>
+<!--
+        <blockquote class="c-review-quote">
+          <ul class="mzp-u-list-styled">
+            <li>Gives peace of mind when surfing the internet.</li>
+            <li>Protects ones identity from trackers through generation of aliases where one does not want to share the real email address for various reasons.</li>
+            <li>Email inbox data is safe in the hands of Firefox Relay.</li>
+            <li>Firefox Relay works wonders, try it!!!</li>
+          </ul>
+          <cite class="c-review-cite"><span class="c-review-stars">5/5</span><strong>Firefox user 17361666</strong><span class="c-review-source">Source: <a href="https://addons.mozilla.org/en-US/firefox/addon/private-relay/reviews/1830387/">addons.mozilla.org</a></span></cite>
+        </blockquote> -->
+      </div>
+    </div>
 
   </section>
 
 
   <section class="c-pricing">
-    <h2 class="mzp-u-title-sm">{{ ftl('plan-matrix-offer-title') }}</h2>
-    <p>{{ ftl('plan-matrix-offer-body') }}</p>
+    <h2>ftl-pricing</h2>
+    <h3 class="c-pricing-sub">{{ ftl('plan-matrix-offer-title') }}</h3>
+    <p class="c-pricing-intro">{{ ftl('plan-matrix-offer-body') }}</p>
     <div class="mzp-l-content">
       {% include 'products/relay/includes/matrix.html' %}
     </div>
@@ -100,7 +120,7 @@
   {% include 'products/relay/includes/features.html' %}
 
   <section class="mzp-l-content u-center">
-    <h2>{{ ftl('highlighted-features-section-bottom-title') }}</h2>
+    <h2 class="mzp-c-section-heading">{{ ftl('highlighted-features-section-bottom-title') }}</h2>
     <p><button>{{ ftl('highlighted-features-section-bottom-cta') }}</button></p>
   </section>
 
