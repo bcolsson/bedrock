@@ -125,6 +125,7 @@ plan-matrix-join-waitlist = Join the Waitlist
 
 ## REVIEWS SECTION
 
+landing-reviews-title = Reviews
 landing-reviews-add-ons = Add-ons
 landing-reviews-logo-title = { -brand-name-firefox-browser }
 # Do not localize addons.mozilla.org

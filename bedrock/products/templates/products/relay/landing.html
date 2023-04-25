@@ -33,7 +33,7 @@
 <div class="t-hero">
 
   {% call split(
-    block_class='mzp-l-split-pop',
+    block_class='mzp-l-split-pop mzp-l-split-hide-media-on-sm-md',
     theme_class='',
     media_class='',
     media_include='products/relay/includes/phone.html'
@@ -51,17 +51,17 @@
 <section class="mzp-l-content c-works">
   <h2 class="mzp-c-section-heading">{{ ftl('how-it-works-section-title') }}</h2>
   <div class="mzp-l-columns mzp-t-columns-three">
-    <div>
+    <div class="c-works-item">
       <img src="{{ static('img/products/relay/landing/how/how-it-works-1.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
       <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-extension-headline') }}</h3>
       <p>{{ ftl('how-it-works-section-extension-body') }}</p>
     </div>
-    <div>
+    <div class="c-works-item">
       <img src="{{ static('img/products/relay/landing/how/how-it-works-2.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
       <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-forward-headline') }}</h3>
       <p>{{ ftl('how-it-works-section-forward-body') }}</p>
     </div>
-    <div>
+    <div class="c-works-item">
       <img src="{{ static('img/products/relay/landing/how/how-it-works-3.svg') }}" alt="" width="306" height="223" loading="lazy" class="c-works-img">
         <h3 class="mzp-u-title-2xs">{{ ftl('how-it-works-section-manage-headline') }}</h3>
         <p>{{ ftl('how-it-works-section-manage-body') }}</p>
@@ -72,7 +72,7 @@
 <div class="t-odd">
   <section class="mzp-l-content">
 
-    <h2>ftl-reviews</h2>
+    <h2 class="u-hidden">{{ ftl('landing-reviews-title') }}</h2>
 
     <div class="c-reviews">
       <div>
@@ -111,7 +111,7 @@
 
 
   <section class="c-pricing">
-    <h2>ftl-pricing</h2>
+    <h2 class="u-hidden">{{ ftl('plan-matrix-title') }}</h2>
     <h3 class="c-pricing-sub">{{ ftl('plan-matrix-offer-title') }}</h3>
     <p class="c-pricing-intro">{{ ftl('plan-matrix-offer-body') }}</p>
     <div class="mzp-l-content">

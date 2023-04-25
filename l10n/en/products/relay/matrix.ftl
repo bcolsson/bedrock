@@ -5,6 +5,8 @@
 ### URL: https://www-dev.allizom.org/products/relay/
 
 
+plan-matrix-title = Pricing
+
 ## PRICING MATRIX SECTION
 
 plan-matrix-offer-title = Choose a level of protection that’s right for you

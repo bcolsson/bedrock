@@ -26,7 +26,8 @@ $brand-theme: 'firefox';
         content: '';
         display: block;
         height: 200px;
-        padding-left: 316px;
+        width: 316px;
+        max-width: 100%;
         position: absolute;
         right: 0;
         top: 0;
@@ -71,7 +72,7 @@ $brand-theme: 'firefox';
     }
 }
 
-.c-bundle-stat {
+li.c-bundle-stat {
     display: none;
 }
 
@@ -84,7 +85,7 @@ $brand-theme: 'firefox';
             background-image: url('/media/img/products/relay/landing/bundle/bg-mobile.png');
             background-size: auto 590px;
             height: 300px;
-            padding-left: 476px;
+            width: 476px;
         }
 
         &::after {
@@ -99,7 +100,8 @@ $brand-theme: 'firefox';
     .t-bundle {
         background-image: url('/media/img/products/relay/landing/bundle/bg.png');
         background-repeat: no-repeat;
-        margin-top: 0;
+        background-position: top left -220px;
+        margin-top: $layout-lg * -1;
         padding-left: $layout-sm;
         padding-top: $layout-sm;
 
@@ -108,7 +110,7 @@ $brand-theme: 'firefox';
         }
 
         &::after {
-            background-image: url('/media/img/products/relay/landing/bundle/woman-1280w.png');
+            background-image: url('/media/img/products/relay/landing/bundle/woman-1280w.png'); // TODO: load appropriate size
             background-position: bottom left;
             border: 0;
             bottom: 0;
@@ -124,6 +126,10 @@ $brand-theme: 'firefox';
 }
 
 @media #{$mq-xl} {
+    .t-bundle {
+        background-position: top left;
+    }
+
     .c-bundle-list {
         flex-direction: row;
     }
