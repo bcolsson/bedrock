@@ -12,6 +12,7 @@ $vpn-download-mq-2xl: '(min-width: 1450px)';
     background-color: $color-marketing-gray-10;
 }
 
+
 .vpn-download-blocked {
     @include text-body-xl;
     text-align: center;
@@ -32,7 +33,7 @@ $vpn-download-mq-2xl: '(min-width: 1450px)';
         }
 
         @media #{$mq-md} {
-            padding: $spacing-lg 0;
+            padding: $spacing-lg 0 0;
             @include text-body-xl;
         }
 
@@ -70,6 +71,7 @@ $vpn-download-mq-2xl: '(min-width: 1450px)';
     grid-row-gap: $spacing-xs;
     grid-column-gap: $spacing-xl;
     padding-bottom: $layout-md;
+    padding-top: 0;
 
     @media #{$vpn-download-mq-2xl} {
         grid-template-columns: repeat(2, 1fr);
