@@ -218,3 +218,13 @@ def vpn_product_referral_link(ctx, referral_id="", page_anchor="", link_text=Non
     markup = f'<a href="{href}{page_anchor}" class="{css_class}" {attrs}>{link_text}</a>'
 
     return Markup(markup)
+
+
+@library.global_function
+def relay_mozmail():
+    return settings.MOZMAIL_DOMAIN
+
+
+@library.global_function
+def relay_free_addresses():
+    return settings.MAX_NUM_FREE_ALIASES

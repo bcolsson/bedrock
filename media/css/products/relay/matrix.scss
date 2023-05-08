@@ -12,6 +12,11 @@ $brand-theme: 'firefox';
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
+    display: none;
+
+    @media #{$mq-xl} {
+        display: table;
+    }
 
     th,
     td {
@@ -140,5 +145,11 @@ $brand-theme: 'firefox';
         > ul {
             gap: $layout-md;
         }
+    }
+}
+
+@media #{$mq-xl} {
+    .c-matrix-mobile {
+        display: none;
     }
 }
