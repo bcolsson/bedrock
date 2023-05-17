@@ -239,7 +239,6 @@ def relay_landing_page(request):
 def relay_premium_page(request):
     template_name = "products/relay/premium.html"
     ftl_files = ["products/relay/shared", "products/relay/landing", "products/relay/premium", "products/relay/bundle", "products/relay/matrix"]
-    ftl_files = ["products/relay/landing", "products/relay/shared"]
 
     context = {}
 
