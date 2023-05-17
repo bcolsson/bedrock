@@ -50,4 +50,6 @@ if settings.DEV:
         path("relay/premium", views.relay_premium_page, name="products.relay.premium"),
         path("relay/invite/", views.relay_invite_page, name="products.relay.invite"),
         page("relay/faq/", "products/relay/faq.html", ftl_files=["products/relay/shared", "products/relay/faq"]),
+        path("relay/waitlist/vpn/", view=views.relay_vpn_waitlist__page, name="products.relay.waitlist.vpn"),
+        path("relay/waitlist/phone/", view=views.relay_phone_waitlist__page, name="products.relay.waitlist.phone"),
     )
